@@ -17,20 +17,20 @@ EXE6=pi_f.x
 OBJ6=pi_f.o
 
 
-CCOMP=gcc-5 -Wall -O3 -c -fopenmp
-CLOMP=gcc-5 -fopenmp
-FCOMP=gfortran-5 -Wall -O3 -c -fopenmp
-FLOMP=gfortran-5 -fopenmp
+CCOMP=gcc -Wall -O2 -c -fopenmp
+CLOMP=gcc -fopenmp
+FCOMP=gfortran -Wall -O2 -c -fopenmp
+FLOMP=gfortran -fopenmp
 
-CCMPI=mpicc -Wall -O3 -c
+CCMPI=mpicc -Wall -O2 -c
 CLMPI=mpicc
-FCMPI=mpif90 -Wall -O3 -c
-FLMPI=mpif90
+FCMPI=mpiifort -Wall -O2 -c
+FLMPI=mpiifort
 
-CC=gcc-5 -Wall -O3 -c
-CL=gcc-5
-FC=gfortran-5 -Wall -O3 -c
-FL=gfortran-5
+CC=gcc -Wall -O2 -c
+CL=gcc
+FC=gfortran -Wall -O2 -c
+FL=gfortran
 
 
 all: $(EXE1) $(EXE2) $(EXE3) $(EXE4) $(EXE5) $(EXE6)
